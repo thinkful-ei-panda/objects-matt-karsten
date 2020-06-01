@@ -25,13 +25,13 @@ for (const property in obj) {
 
 const hobbit = {
   meals: [
-    "breakfast",
-    "second breakfast",
-    "elevenses",
-    "lunch",
-    "afternoon tea",
-    "dinner",
-    "supper",
+    'breakfast',
+    'second breakfast',
+    'elevenses',
+    'lunch',
+    'afternoon tea',
+    'dinner',
+    'supper',
   ],
 };
 
@@ -39,28 +39,28 @@ console.log(hobbit.meals[3]);
 
 const people = [
   {
-    name: "Bob",
-    jobTitle: "Surgeon",
-    boss: "Samwise",
+    name: 'Bob',
+    jobTitle: 'Surgeon',
+    boss: 'Samwise',
   },
   {
-    name: "Samwise",
-    jobTitle: "Hero of the story",
+    name: 'Samwise',
+    jobTitle: 'Hero of the story',
   },
   {
-    name: "Susan",
-    jobTitle: "Traveling crystal saleswoman",
-    boss: "Samwise",
+    name: 'Susan',
+    jobTitle: 'Traveling crystal saleswoman',
+    boss: 'Samwise',
   },
   {
-    name: "Caroline",
-    jobTitle: "Neighborhood plant lady",
-    boss: "Samwise",
+    name: 'Caroline',
+    jobTitle: 'Neighborhood plant lady',
+    boss: 'Samwise',
   },
 ];
 
 people.forEach((item) => {
-  if (item.hasOwnProperty("boss")) {
+  if (item.hasOwnProperty('boss')) {
     console.log(`${item.jobTitle} reports to ${item.boss}`);
   } else {
     console.log(`Founder ${item.name} doesn'treport to anybody`);
@@ -103,71 +103,71 @@ function createCharacters(
 }
 const characters = [
   createCharacters(
-    "Gandalf the White",
-    "gandalf",
-    "Wizard",
-    "Middle Earth",
+    'Gandalf the White',
+    'gandalf',
+    'Wizard',
+    'Middle Earth',
     10,
     6,
-    "wizard staff"
+    'wizard staff'
   ),
   createCharacters(
-    "Bilbo Baggins",
-    "bilbo",
-    "Hobbit",
-    "The Shire",
+    'Bilbo Baggins',
+    'bilbo',
+    'Hobbit',
+    'The Shire',
     2,
     1,
-    "The Ring"
+    'The Ring'
   ),
   createCharacters(
-    "Frodo Baggins",
-    "frodo",
-    "Hobbit",
-    "The Shire",
+    'Frodo Baggins',
+    'frodo',
+    'Hobbit',
+    'The Shire',
     3,
     2,
-    "Sting and Barrow Blade"
+    'Sting and Barrow Blade'
   ),
   createCharacters(
-    "Aragorn son of Arathorn",
-    "aragorn",
-    "Man",
-    "Dunnedain",
+    'Aragorn son of Arathorn',
+    'aragorn',
+    'Man',
+    'Dunnedain',
     6,
     8,
-    "Anduril"
+    'Anduril'
   ),
   createCharacters(
-    "Legolas",
-    "legolas",
-    "Elf",
-    "Woodland Realm",
+    'Legolas',
+    'legolas',
+    'Elf',
+    'Woodland Realm',
     8,
     5,
-    "Bow and Arrow"
+    'Bow and Arrow'
   ),
   createCharacters(
-    "Arwen Undomiel",
-    "arwen",
-    "Half-Elf",
-    "Rivendell",
+    'Arwen Undomiel',
+    'arwen',
+    'Half-Elf',
+    'Rivendell',
     7,
     9,
-    "Handhafang"
+    'Handhafang'
   ),
 ];
 
 console.log(characters);
 
 const aragorn = characters.find(function (name) {
-  if (name.nickname === "aragorn") {
+  if (name.nickname === 'aragorn') {
     name.describe();
   }
 });
 
 const hobbits = characters.filter((character) => {
-  if (character.race === "Hobbit") {
+  if (character.race === 'Hobbit') {
     return character;
   }
 });
@@ -199,19 +199,19 @@ function decode(word) {
   if (cipher.hasOwnProperty(word[0])) {
     return word[cipher[word[0]]];
   } else {
-    return " ";
+    return ' ';
   }
 }
 
-const sentence = " craft block argon meter bells brown croon droop ";
+const sentence = ' craft block argon meter bells brown croon droop ';
 
 function decodeWords(sentence) {
   console.log(
     sentence
       .trim()
-      .split(" ")
+      .split(' ')
       .map((item) => decode(item))
-      .join("")
+      .join('')
   );
 }
 
