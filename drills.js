@@ -123,14 +123,6 @@ const plus5 = characters.filter(function(character) {
 
 console.log(plus5);
 
-// const cipher = {
-//   'a': ,// character at index 2
-//   'b': ,// character at index 3
-//   'c': ,// character at index 4
-//   'd': ,// character at index 5
-//   ' ': // 
-// };
-
 
 // decodeWords as function
 // seperate string into array seperated by space
@@ -138,10 +130,6 @@ console.log(plus5);
 // if decode character  is found, add nth character of word to new array or push ' ' if no match
 // return new array as a string
 
-
-// word[0] === cipher.a 
-// word = word[2];
-// 
 const cipher=  {
   'a': 1,
   'b': 2,
@@ -162,14 +150,13 @@ function decode (word) {
 const sentence = ' craft block argon meter bells brown croon droop ';
 
 function decodeWords(sentence){
-  // const array = sentence.trim().split(' ');
-  
-  // console.log(array.map(item => decode(item)).join(''));
+ 
   console.log(sentence
     .trim()
     .split(' ')
     .map(item => decode(item))
-    .join(''));
+    .join('')
+  );
 }
 
 
